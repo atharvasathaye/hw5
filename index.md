@@ -74,6 +74,6 @@ The second chart uses Altair’s `selection_point` to allow filtering sightings 
 </a>
 
 <script>
-vegaEmbed('#chart1', 'bigfoot_reports_per_year.json', { actions: false });
-vegaEmbed('#chart2', 'bigfoot_map_interactive.json', { actions: false });
+vegaEmbed('#chart1', 'charts/bigfoot_reports_per_year.json', { actions: false });
+vegaEmbed('#chart2', 'charts/bigfoot_map_interactive.json', { actions: false });
 </script>
