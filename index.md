@@ -57,9 +57,25 @@ button:hover {
 
 ---
 
+## Write-up
+
+### Plot 1: Bigfoot Sightings Per Year
+
+This bar chart displays the total number of reported Bigfoot sightings for each year. It helps identify trends over time, such as whether sightings are increasing or decreasing. The x-axis shows the year as an ordinal variable, while the y-axis encodes the count as a quantitative variable. Tooltips provide exact sighting counts on hover.
+
+For transformation, the `date` field was parsed into datetime and the `year` extracted. Then, I grouped the data by year and used `.size()` to count the number of reports. I didn’t use a color map since the bar height clearly communicates variation in counts. This plot is new for Homework 5 and wasn’t reused from previous assignments. It was exported to JSON for Vega-Lite embedding.
+
+### Plot 2: Sightings by Location and Season
+
+The second plot is a scatter plot of sightings across North America, using longitude and latitude as coordinates. Each dot is color-coded by season, allowing us to see both where and when sightings happen. I used color as a nominal encoding and position as quantitative.
+
+To prepare this, I removed entries missing location or season data. Each dot includes a tooltip showing the state, location, date, and season. This plot is also new and wasn’t reused. It was saved in HTML and JSON formats.
+
+---
+
 ## Interactivity
 
-The second chart uses Altair’s `selection_point` to allow filtering sightings by season. This helps make patterns easier to identify across the map.
+The first chart includes tooltips that show exact sighting counts for each year. The second chart includes interactivity via Altair’s `selection_point`, which lets users filter the data by season through the legend. This makes it easier to spot seasonal patterns and regional trends without overwhelming the map.
 
 ---
 
