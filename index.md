@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Homework 5
+layout: none
+title: Bigfoot Visualizations
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
